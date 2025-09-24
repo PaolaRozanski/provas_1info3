@@ -6,4 +6,18 @@ O programa deve primeiro pedir ao usuário para adicionar um novo número à lis
 Depois, usando for...of, o programa deve percorrer o array e calcular a soma apenas dos números pares.
 Ao final, exiba a soma total dos números pares encontrados.
     */
+   let numeros = [15, 8, 90, 75, 102, 6, 43];
+   let novoNumero = Number(prompt(`Informe um novo número:`));
+   let soma = 0;
+   let pares = []
+   //Processamento
+   numeros.push(novoNumero)
+   for (let item of numeros) {
+    if(item%2 == 0){
+        soma = soma + item
+        pares.push(item)
+    }
+   }
+   //Saída
+   alert(`A lista de números pares é ${pares.join(", ")} e a sua soma é ${soma}.`)
 </script>
