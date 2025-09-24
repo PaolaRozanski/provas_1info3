@@ -6,4 +6,16 @@ Peça para o usuário informar a sua própria idade e a insira no Array.
 Usando for...of, crie um novo array contendo apenas as idades que já atingiram a maioridade (18).
 Exiba a lista de idades acima de 18 anos.
     */
+   //Entrada
+   let idade = [15, 17, 19, 52, 14, 25];
+   let suaIdade = Number(prompt(`Informe a sua idade:`));
+   let maiorIdade = [];
+   //Processamento
+   idade.push(suaIdade)
+   for (let item of idade) {
+    if(item >=18 ){
+        maiorIdade.push(item)
+    }
+}
+alert(`A lista das idades acima de 18 anos é ${maiorIdade.join(", ")}`);
 </script>
