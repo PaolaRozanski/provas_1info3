@@ -6,4 +6,17 @@ Pergunte ao usuário quanto será o Juro aplicado nos valores que estão no Arra
 Usando for...of, calcule o custo total de todas as contas já com o juro aplicado.
 Apresente para o usuário qual será o valor final da compra.
     */
+   //Entrada
+   let contasNaoPagas = [50.00, 15.50, 120.00, 80];
+   let juro = Number(prompt(`Qual será o juros sobre os valores?`));
+   let total = 0;
+
+   //Processamento
+   for(let item of contasNaoPagas){
+    let valor = item + (item * (juro/100))
+    total =+ valor
+   }
+   
+   //Saída
+   alert(`O valor total da sua compra é R$${total.toFixed(2)}.`)
 </script>
