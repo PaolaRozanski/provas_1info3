@@ -6,4 +6,14 @@ Peça ao usuário um percentual de desconto que será aplicado nos preços que e
 Usando for...of, calcule o preço total da compra, aplicando o desconto informado pelo usuário apenas nos produtos que custam mais de R$ 60,00.
 Apresente para o usuário qual será o valor final da compra.
     */
+   //Entrada
+    let nume = [50.00, 15.50, 120.00, 80]
+    let desconto = Number(prompt("Quantos sera aplicado de juros?"))
+    let custoTotal = 0
+    //Processamento
+        for (let item of nume) {
+        custoTotal += item - ((item * desconto) / 100)
+    }
+    //Saída
+        alert(`O custo total é: ${custoTotal}`)
 </script>
